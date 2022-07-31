@@ -3,7 +3,7 @@
 }
 
 .bg-body {
-    background-image: url(bg1.png) ;
+    background-image: url(/bg1.png) ;
     /* background-size:cover; */
     width: 100%;
     height: 100%;
