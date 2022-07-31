@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator for Emad</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hidden-slide"></div>
+    <img src="/bg1.png" alt="No photo" class="bg-body" />
+    <div class="header"></div>
+    <div class="main">
+      <select name="percent" class="select" id="percent">
+        <option class="opt1" selected value="85">+15% & -15%</option>
+        <option class="opt2" value="95">+15% & -5%</option>
+      </select>
+      <div class="field">
+        <input class="inp1" type="text" />
+        <button class="delete">إزالة</button>
+      </div>
+      <p class="result"></p>
+      <div class="note">PUT THE NUMBER IN THE FIELD</div>
+    </div>
+
+    <!-- History -->
+    <button class="hideH">إخفاء السجل</button>
+    <div class="father-history">
+      <button class="deleteHistory">مسح السجل</button>
+      <div class="empty">سجل فارغ</div>
+      <div class="history"></div>
+    </div>
+    <footer class="footer">
+      <div class="copyright">Designed By 'Emad Bakry'</div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
