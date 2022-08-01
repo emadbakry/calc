@@ -53,9 +53,9 @@ inp.oninput = function()  {
         mySubTotal.style.display = "block";
         myTotal.style.display    = "block";
         
-        myAllVs.textContent = (TotalCells).toFixed(3);
-        mySubTotal.textContent = (TotalCells * 115/100).toFixed(5);
-        myTotal.textContent = (TotalCells * 115/100 * 85/100).toFixed(5);
+        myAllVs.textContent = +((TotalCells).toFixed(3));
+        mySubTotal.textContent = +((TotalCells * 115/100).toFixed(5));
+        myTotal.textContent = +((TotalCells * 115/100 * 85/100).toFixed(5));
     }
 }
 
