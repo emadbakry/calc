@@ -4,7 +4,27 @@ let myAllVs = document.querySelector(".AllVs span");
 let mySubTotal = document.querySelector(".subtotal span");
 let myTotal = document.querySelector(".total span");
 let deletebtn = document.querySelector(".delete");
-// let select = document.querySelector("select");
+let select = document.querySelector("select");
+
+
+// this is the main var of 5% and 15% change
+let mainpercent = 0;
+
+if (select.value) {
+    mainpercent = select.value;
+}
+
+select.onchange = () => {
+    // localStorage.theselect = select.value;
+
+    if (select.value) {
+        mainpercent = select.value;
+    }
+}
+
+
+
+
 
 deletebtn.onclick = () => {
         //  backUp = inp.value;
@@ -55,7 +75,7 @@ inp.oninput = function()  {
         
         myAllVs.textContent = +((TotalCells).toFixed(3));
         mySubTotal.textContent = +((TotalCells * 115/100).toFixed(5));
-        myTotal.textContent = +((TotalCells * 115/100 * 85/100).toFixed(5));
+        myTotal.textContent = +((TotalCells * 115/100 * (mainpercent)/100).toFixed(5));
     }
 }
 

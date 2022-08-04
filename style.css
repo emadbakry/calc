@@ -32,7 +32,8 @@
     height: 35px !important;
     cursor: pointer;
     outline: none;
-    display: none;
+    position: relative;
+    top:160px;
 }
 .result {
     display: flex;
@@ -96,6 +97,7 @@
     position: absolute;
     top: 25px;
     left: 200px;
+    font-size:large;
     font-weight: bold;
     background: red;
     width: fit-content;
